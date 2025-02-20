@@ -2,7 +2,7 @@
 
 ## Routes
 
-### Send data for new Register
+### Send data for new register
 
 curl -X POST http://127.0.0.1:8000 -H "Content-Type: application/json" -d '**_Enter JSON Format here_**'
 
@@ -10,7 +10,7 @@ curl -X POST http://127.0.0.1:8000 -H "Content-Type: application/json" -d '**_En
 
 curl -X GET http://127.0.0.1:8000 -H "Content-Type: application/json"
 
-### Check Specific Registration Number
+### Check specific registration number
 
 curl -X GET http://127.0.0.1:8000/check/ **_Registration Number_** -H "Content-Type: application/json"
 
@@ -18,7 +18,7 @@ curl -X GET http://127.0.0.1:8000/check/ **_Registration Number_** -H "Content-T
 
 curl -X DELETE http://127.0.0.1:8000/delete -H "Content-Type: application/json"
 
-### Delete specific Registration Number
+### Delete specific registration number
 
 curl -X DELETE http://127.0.0.1:8000/delete/ **_Registration Number_** -H "Content-Type: application/json"
 
@@ -26,11 +26,11 @@ curl -X DELETE http://127.0.0.1:8000/delete/ **_Registration Number_** -H "Conte
 
 curl -X PUT http://127.0.0.1:8000/edit/ **_Registration Number_** -H "Content-Type: application/json" -d '**_Enter JSON Format here_**'
 
-### Edit specific fields of a Profile
+### Edit specific fields of a profile
 
 curl -X PATCH http://127.0.0.1:8000/edit/ **_Registration Number_** -H "Content-Type: application/json" -d '**_Enter JSON Format here_**'
 
-## Reset Migrations
+## Reset migrations
 
 1. Change the model in models.py
 2. Remove migrations folder
