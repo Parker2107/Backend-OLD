@@ -1,3 +1,5 @@
+from .models import userProfile, formData
 from django.contrib import admin
 
-# Register your models here.
+admin.site.register(userProfile)
+admin.site.register(formData)

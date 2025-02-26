@@ -1,3 +1,4 @@
+from django.contrib import admin
 from django.urls import path
 from . import views
 
@@ -7,4 +8,5 @@ urlpatterns = [
     path("delete/<str:user_id>",views.deleteID, name="delete"),
     path("delete",views.delete, name="delete"),
     path("edit/<str:user_id>", views.edit, name="edit"),
+    path("upload", views.formUpload, name="form"),
 ]
